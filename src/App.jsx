@@ -38,6 +38,9 @@
 import Header from "./Components/header";
 import ProfileCard from "./Components/ProfileCard";
 import Footer from "./Components/footer";
+import { Routes, Route, Link } from "react-router-dom";
+import Home from "./pages/Home";
+import Counter from "./pages/Counter";
 
 function App() {
   return (
@@ -52,6 +55,31 @@ function App() {
       <Footer />
     </div>
   );
+
+
+function App() {
+  return (
+    <div>
+      {/* Navigation */}
+      <nav style={{ display: "flex", gap: "15px", marginBottom: "20px" }}>
+        <Link to="/">Home</Link>
+        <Link to="/counter">Counter</Link>
+        <Link to="/todo">Todo</Link>
+        <Link to="/about">About</Link>
+      </nav>
+
+      {/* Routes */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/counter" element={<Counter />} />
+        <Route path="/todo" element={<Todo />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </div>
+  );
+}
+
+
 }
 
 export default App;
