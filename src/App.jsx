@@ -40,17 +40,21 @@ import ProfileCard from "./Components/ProfileCard";
 import Footer from "./Components/footer";
 import { Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
-import Counter from "./pages/Counter";
+import Counter from "./Pages/Counter";
+
 
 function App() {
   return (
     <div>
       <Header />
       
-      <h2 style={{marginLeft:"500px",backgroundColor: "lightsalmon",textAlign:"center"}}>My Friends</h2>
+      <h2 style={{marginLeft:"500px",backgroundColor: "lightsalmon",textAlign:"center",borderBottom:"5px ridge red"}}>My Friends</h2>
+      <ProfileCard name="Ilyas" age="22" city="Karachi" />
       <ProfileCard name="Ilyas" age="22" city="Karachi" />
       <ProfileCard name="Ali" age="24" city="Lahore" />
       <ProfileCard name="Sara" age="21" city="Islamabad" />
+      <ProfileCard name="Shahid" age="21" city="Islamabad" />
+      <Counter/>
 
       <Footer />
     </div>
