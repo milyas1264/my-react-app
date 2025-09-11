@@ -41,6 +41,7 @@ import Footer from "./Components/footer";
 import { Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import Counter from "./Pages/Counter";
+import BootstrapCard from "./Components/BootstrapCard";
 
 
 function App() {
@@ -49,14 +50,17 @@ function App() {
       <Header />
       
       <h2 style={{marginLeft:"500px",backgroundColor: "lightsalmon",textAlign:"center",borderBottom:"5px ridge red"}}>My Friends</h2>
-      <ProfileCard name="Ilyas" age="22" city="Karachi" />
-      <ProfileCard name="Ilyas" age="22" city="Karachi" />
-      <ProfileCard name="Ali" age="24" city="Lahore" />
-      <ProfileCard name="Sara" age="21" city="Islamabad" />
-      <ProfileCard name="Shahid" age="21" city="Islamabad" />
+      
+        <ProfileCard name="Ilyas" age="22" city="Karachi" />
+        <ProfileCard name="Ilyas" age="22" city="Karachi" />
+        <ProfileCard name="Ali" age="24" city="Lahore" />
+        <ProfileCard name="Sara" age="21" city="Islamabad" />
+        <ProfileCard name="Shahid" age="21" city="Islamabad" />
       <Counter/>
 
       <Footer />
+        <ABC/>
+        <BootstrapCard/>
     </div>
   );
 
@@ -86,5 +90,23 @@ function App() {
 
 }
 
+
 export default App;
+
+function ABC() {
+  return (
+    <div className="container text-center mt-5">
+      <h1 className="text-primary">Hello React + Bootstrap</h1>
+      <button className="btn btn-success">Click Me</button>
+    </div>
+  );
+}
+
+//Bootstrap integration
+
+
+//
+
+
+
 
