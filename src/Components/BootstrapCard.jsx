@@ -1,16 +1,19 @@
-function BootstrapCard(props) {
+
+
+function BasicExample() {
   return (
-    <div className="card" style={{ width: "18rem", margin: "10px auto" }}>
-      <img src={props.img} className="card-img-top" alt={props.title} />
-      <div className="card-body">
-        <h5 className="card-title">{props.title}</h5>
-        <p className="card-text">{props.text}</p>
-        <a href={props.link} className="btn btn-primary">
-          {props.btnText}
-        </a>
-      </div>
-    </div>
+    <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src="holder.js/100px180" />
+      <Card.Body>
+        <Card.Title>Card Title</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </Card.Text>
+        <Button variant="primary">Go somewhere</Button>
+      </Card.Body>
+    </Card>
   );
 }
 
-export default BootstrapCard;
+export default BasicExample;
