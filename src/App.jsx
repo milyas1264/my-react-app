@@ -65,27 +65,7 @@ function App() {
   );
 
 
-function App() {
-  return (
-    <div>
-      {/* Navigation */}
-      <nav style={{ display: "flex", gap: "15px", marginBottom: "20px" }}>
-        <Link to="/">Home</Link>
-        <Link to="/counter">Counter</Link>
-        <Link to="/todo">Todo</Link>
-        <Link to="/about">About</Link>
-      </nav>
-        <h1 className="bg"></h1>
-      {/* Routes */}
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/counter" element={<Counter />} />
-        <Route path="/todo" element={<Todo />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
-    </div>
-  );
-}
+
 
 
 }
