@@ -75,7 +75,7 @@ function App() {
         <Link to="/todo">Todo</Link>
         <Link to="/about">About</Link>
       </nav>
-
+        <h1 className="bg"></h1>
       {/* Routes */}
       <Routes>
         <Route path="/" element={<Home />} />
