@@ -41,12 +41,13 @@ import Footer from "./Components/footer";
 import { Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import Counter from "./Pages/Counter";
+import WelCome from "./Components/WelCome";
 
 
 
 function App() {
   return (
-    <div>
+    <div style={{marginLeft:"400px"}}>
       <Header />
       
         <div >
@@ -60,13 +61,9 @@ function App() {
 
       <Footer />
         <ABC/>
-        
+        <WelCome user="Uzair" />
     </div>
   );
-
-
-
-
 
 }
 
