@@ -49,10 +49,10 @@ function App() {
     <div>
       <Header />
       
-      <h2 style={{marginLeft:"500px",backgroundColor: "lightsalmon",textAlign:"center",borderBottom:"5px ridge red"}}>My Friends</h2>
         <div >
-        <ProfileCard name="Ilyas" age="22" city="Karachi" />
-        <ProfileCard name="Ilyas" age="22" city="Karachi" />
+        <h2 style={{backgroundColor: "lightsalmon",textAlign:"center",borderBottom:"5px ridge red"}}>My Friends</h2>
+        <ProfileCard name="Rashid" age="22" city="Karachi" />
+        <ProfileCard name="Ahmed" age="22" city="Karachi" />
         <ProfileCard name="Ali" age="24" city="Lahore" />
         <ProfileCard name="Sara" age="21" city="Islamabad" />
         </div>

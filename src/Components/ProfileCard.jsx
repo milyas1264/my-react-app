@@ -1,7 +1,7 @@
 // Ye ek chhota component hai jo props leta hai aur ek card banata hai
 function ProfileCard(props) {
   return (
-    <div style={{border: "5px ridge green", padding: "10px", margin: "10px", borderRadius: "8px", marginLeft: "500px", backgroundColor: "gold", width: "200px", textAlign: "center",color: 'blue'}}>
+    <div style={{border: "5px ridge green", padding: "10px", margin: "10px", borderRadius: "8px", marginLeft: "500px", backgroundColor: "gold", width: "200px", textAlign: "center",color: 'blue',display: "inline-block"}}>
       <h2>{props.name}</h2>
       <p>Age: {props.age}</p>
       <p>City: {props.city}</p>
