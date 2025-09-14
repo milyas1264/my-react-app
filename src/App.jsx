@@ -41,7 +41,7 @@ import Footer from "./Components/footer";
 import { Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import Counter from "./Pages/Counter";
-import BootstrapCard from "./Components/BootstrapCard";
+
 
 
 function App() {
@@ -50,12 +50,12 @@ function App() {
       <Header />
       
       <h2 style={{marginLeft:"500px",backgroundColor: "lightsalmon",textAlign:"center",borderBottom:"5px ridge red"}}>My Friends</h2>
-        
+        <div >
         <ProfileCard name="Ilyas" age="22" city="Karachi" />
         <ProfileCard name="Ilyas" age="22" city="Karachi" />
         <ProfileCard name="Ali" age="24" city="Lahore" />
         <ProfileCard name="Sara" age="21" city="Islamabad" />
-        
+        </div>
       <Counter/>
 
       <Footer />
