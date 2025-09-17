@@ -38,10 +38,9 @@
 import Header from "./Components/header";
 import ProfileCard from "./Components/ProfileCard";
 import Footer from "./Components/footer";
-import { Routes, Route, Link } from "react-router-dom";
-import Home from "./pages/Home";
 import Counter from "./Pages/Counter";
 import WelCome from "./Components/WelCome";
+
 
 
 
@@ -61,7 +60,8 @@ function App() {
 
       <Footer />
         <ABC/>
-        <WelCome user="Uzair" />
+        <WelCome user="Uzair"  />
+        <WelCome user = "abc@gmail.com"  />
     </div>
   );
 
