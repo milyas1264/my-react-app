@@ -35,18 +35,19 @@
 // export default App
 
 //ProfileCard component;
-import Header from "./Components/header";
+import Header from "./Components/Header";
 import ProfileCard from "./Components/ProfileCard";
 import Footer from "./Components/footer";
 import Counter from "./Pages/Counter";
 import WelCome from "./Components/WelCome";
+import BootstrapCard from "./Components/BootsCard";
 
 
 
 
 function App() {
   return (
-    <div style={{marginLeft:"400px"}}>
+    <div style={{margin:"25px 300px"}}>
       <Header />
       
         <div >
@@ -61,7 +62,36 @@ function App() {
       <Footer />
         <ABC/>
         <WelCome user="Uzair"  />
-        <WelCome user = "abc@gmail.com"  />
+        <WelCome   >  
+        </WelCome >
+        <div className="container" style={{display:"flex",flexWrap:"wrap",justifyContent:"center", gap:"10px"}}>
+          <BootstrapCard
+            img="https://via.placeholder.com/150"
+            title="React"
+            text="Some quick example text to build on the card title and make up the bulk of the card's content."
+            link="#"
+            btnText="Go somewhere"
+            />
+            <BootstrapCard
+          img="https://via.placeholder.com/150"
+          title="Tailwind CSS"
+          text="Some quick example text to build on the card title and make up the bulk of the card's content."
+          link="#"
+          btnText="Go somewhere"
+        />
+        <BootstrapCard
+          img="https://via.placeholder.com/150"
+          title="JavaScript"
+          text="Some quick example text to build on the card title and make up the bulk of the card's content."
+          link="#"
+          btnText="Go somewhere"
+        />
+        
+        </div>
+          
+          
+        
+      
     </div>
   );
 
