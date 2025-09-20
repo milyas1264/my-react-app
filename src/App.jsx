@@ -41,6 +41,7 @@ import Footer from "./Components/footer";
 import Counter from "./Pages/Counter";
 import WelCome from "./Components/WelCome";
 import BootstrapCard from "./Components/BootsCard";
+import ShowHidePassword from "./Components/ShowHidePassword";
 
 
 
@@ -75,7 +76,7 @@ function App() {
             <BootstrapCard
           img="https://via.placeholder.com/150"
           title="Tailwind CSS"
-          text="Some quick example text to build on the card title and make up the bulk of the card's content."
+          text="Some quick example text to build on the card  and make up the bulk of the card's content.title"
           link="#"
           btnText="Go somewhere"
         />
@@ -86,7 +87,7 @@ function App() {
           link="#"
           btnText="Go somewhere"
         />
-        
+        <ShowHidePassword/>
         </div>
           
           
