@@ -42,6 +42,7 @@ import Counter from "./Pages/Counter";
 import WelCome from "./Components/WelCome";
 import BootstrapCard from "./Components/BootsCard";
 import ShowHidePassword from "./Components/ShowHidePassword";
+import Myform from "./Components/myForm";
 
 
 
@@ -88,6 +89,8 @@ function App() {
           btnText="Go somewhere"
         />
         <ShowHidePassword/>
+        
+        <Myform/>
         </div>
           
           
