@@ -38,11 +38,13 @@
 import Header from "./Components/Header";
 import ProfileCard from "./Components/ProfileCard";
 import Footer from "./Components/footer";
-import Counter from "./Pages/Counter";
+import Counter from "./Components/Pages/Counter";
 import WelCome from "./Components/WelCome";
 import BootstrapCard from "./Components/BootsCard";
 import ShowHidePassword from "./Components/ShowHidePassword";
 import Myform from "./Components/myForm";
+import AppRoutes from "./Components/Router";
+
 
 
 
@@ -88,11 +90,25 @@ function App() {
           link="#"
           btnText="Go somewhere"
         />
+        <div id="router" style={{border:"2px solid black",padding:"10px",marginTop:"20px"}}>
         <ShowHidePassword/>
-        
-        <Myform/>
+
         </div>
-          
+       
+        
+        <div id="router" style={{border:"2px ridge green",padding:"10px",marginTop:"20px"}}>
+        <Myform/>
+
+        </div>
+       
+        <hr />
+        <div id="router" style={{border:"2px solid black",padding:"10px",marginTop:"20px",backgroundColor:"lightgrey",textAlign:"center"}}>
+          <h1>This is the Routers</h1>
+       <AppRoutes/>
+        </div>
+        
+        </div>
+        
           
         
       
