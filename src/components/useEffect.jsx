@@ -8,9 +8,12 @@ function Message() {
   }, [count]);
 
   return (
-    <div class="m-4 p-4 border-2 border-blue-400">
+    <div class="m-4 p-4 border-2 border-blue-400 flex-2 gap-10 justify-center items-center">
       <h2>Count: {count}</h2>
       <button onClick={() => setCount(count + 1)} class='text-amber-300'>Increase</button>
+      <button onClick={() => setCount(count - 1)} class='text-amber-300' >Decrease</button>
+      <button onClick={() => setCount(0)} class='text-amber-300' >Clear</button>
+     
     </div>
   );
 }
